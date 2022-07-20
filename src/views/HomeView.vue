@@ -5,7 +5,7 @@ v-row.text-center#home
     //- v-img.w-30(src="https://github.com/alsoson/pomodoro/blob/master/src/assets/images/%E6%BB%BF.png?raw=true")
   v-col(cols="12")
     #square(background="white")
-      h1 {{ timeText }}
+      h1.font.font-500 {{ timeText }}
       v-btn.mx-3(icon color="#55a6a1" v-if="status !== 1" @click="startTimer")
         v-icon mdi-play
       v-btn.mx-3(icon color="#55a6a1" v-else @click="pauseTimer")
