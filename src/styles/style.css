@@ -6,3 +6,41 @@
   width: 50px;
 }
 
+.w-30{
+  width:30%;
+}
+
+.tomato{
+  width: 50px;
+}
+
+#square{
+  /* background: blue; */
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  padding-top: 180px;
+  border-radius: 50%;
+  border:2px solid #fe4370;
+}
+
+.w-50{
+  width:30%;
+  height: 100px;
+  mask: url('../assets/images/滿.png')no-repeat center/contain;
+  -webkit-mask: url('../assets/images/滿.png')no-repeat center/contain;
+
+}
+
+
+.h-30{
+  height:50%;
+}
+
+
+#circle{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 2px solid #d11f47;
+}

@@ -1,15 +1,17 @@
 <template lang="pug" >
 v-row.text-center#home
+  //-v-col(cols="12")
+    //-.w-50(background=" linear-gradient(to top, red 0%, red 1%, transparent 1%,transparent 100%)")
+    //- v-img.w-30(src="https://github.com/alsoson/pomodoro/blob/master/src/assets/images/%E6%BB%BF.png?raw=true")
   v-col(cols="12")
-    | 1234
-  v-col(cols="12")
-    h1 {{ timeText }}
-    v-btn.mx-3(icon color="#55a6a1" v-if="status !== 1" @click="startTimer")
-      v-icon mdi-play
-    v-btn.mx-3(icon color="#55a6a1" v-else @click="pauseTimer")
-      v-icon mdi-pause
-    v-btn.mx-3(icon color="#fe4370" v-if="current.length > 0" @click="finishTimer(true)")
-      v-icon mdi-skip-next
+    #square(background="white")
+      h1 {{ timeText }}
+      v-btn.mx-3(icon color="#55a6a1" v-if="status !== 1" @click="startTimer")
+        v-icon mdi-play
+      v-btn.mx-3(icon color="#55a6a1" v-else @click="pauseTimer")
+        v-icon mdi-pause
+      v-btn.mx-3(icon color="#fe4370" v-if="current.length > 0" @click="finishTimer(true)")
+        v-icon mdi-skip-next
   v-col(cols="12")
     h1 {{ currentText }}
 </template>
